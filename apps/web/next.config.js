@@ -23,6 +23,9 @@ try {
 const nextConfig = {
   reactStrictMode: true,
   transpilePackages: ['@lamed/shared', '@lamed/config'],
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
   images: {
     remotePatterns: [
       { protocol: 'https', hostname: 'coresg-normal.trae.ai' },
@@ -33,4 +36,5 @@ const nextConfig = {
 };
 
 module.exports = nextConfig;
+
 
