@@ -22,6 +22,7 @@ try {
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
+  transpilePackages: ['@lamed/shared', '@lamed/config'],
   images: {
     remotePatterns: [
       { protocol: 'https', hostname: 'coresg-normal.trae.ai' },
@@ -32,3 +33,4 @@ const nextConfig = {
 };
 
 module.exports = nextConfig;
+
