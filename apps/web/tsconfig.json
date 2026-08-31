@@ -1,0 +1,13 @@
+﻿{
+  "extends": "../../packages/config/tsconfig/nextjs.json",
+  "compilerOptions": {
+    "paths": {
+      "@/*": ["./src/*"],
+      "@lamed/shared": ["../../packages/shared/src/index.ts"],
+      "@lamed/shared/*": ["../../packages/shared/src/*"]
+    },
+    "baseUrl": "."
+  },
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+  "exclude": ["node_modules"]
+}

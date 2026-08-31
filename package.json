@@ -1,0 +1,28 @@
+{
+  "name": "lamed-monorepo",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "turbo run dev",
+    "dev:web": "npm -w @lamed/web run dev",
+    "dev:admin": "npm -w @lamed/admin run dev",
+    "build": "turbo run build",
+    "build:web": "npm -w @lamed/web run build",
+    "build:admin": "npm -w @lamed/admin run build",
+    "lint": "turbo run lint",
+    "lint:web": "npm -w @lamed/web run lint",
+    "lint:admin": "npm -w @lamed/admin run lint",
+    "typecheck": "turbo run typecheck",
+    "typecheck:web": "npm -w @lamed/web run typecheck",
+    "typecheck:admin": "npm -w @lamed/admin run typecheck"
+  },
+  "devDependencies": {
+    "turbo": "^2.10.11"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
