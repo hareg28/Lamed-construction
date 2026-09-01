@@ -81,11 +81,7 @@ export default function ProjectsPage() {
               We couldn&apos;t find any projects matching your current filters.
             </p>
             <button
-              onClick={() => {
-                setStatusFilter("all");
-                setTypeFilter("all");
-                setSearchQuery("");
-              }}
+              onClick={() => window.location.reload()}
               className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-emerald-600 text-white font-semibold hover:bg-emerald-700 transition-colors shadow-md"
             >
               {t.filters.reset}

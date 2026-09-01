@@ -1,4 +1,4 @@
-import type { Project, NewsPost, ContactInquiry, ProjectUpdate, AdminUser } from '@/types';
+import type { Project, NewsPost, ContactInquiry, ProjectUpdate, AdminUser, Certificate } from '@/types';
 
 const imagePath = (name: string) => `/assets/images/${name}`;
 
@@ -418,8 +418,6 @@ const admin: AdminUser = {
   name: 'Lamed Admin',
   passwordHash: '$2a$10$rMQj3VrqH8gGkzFwBk7EeeYI5j8qPq9s0YHkQqH1oXoXqH1oXoXoX',
 };
-
-import type { Project, NewsPost, ContactInquiry, ProjectUpdate, AdminUser, Certificate } from '@/types';
 
 const certificates: Certificate[] = [
   {
