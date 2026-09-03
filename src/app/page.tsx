@@ -100,7 +100,7 @@ export default function HomePage() {
             <div className="relative h-28 w-64 sm:h-36 sm:w-80 md:h-44 md:w-[22rem] overflow-hidden">
               <Image
                 src={logoImage}
-                alt="Lamed Construction logo"
+                alt="Lamed Construction PLC logo"
                 fill
                 className="object-contain"
                 priority

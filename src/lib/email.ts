@@ -90,7 +90,7 @@ async function sendViaResend(inquiry: InquiryPayload): Promise<boolean> {
       'Content-Type': 'application/json',
     },
     body: JSON.stringify({
-      from: `"Lamed Construction" <${CONTACT_EMAIL_FROM}>`,
+      from: `"Lamed Construction PLC" <${CONTACT_EMAIL_FROM}>`,
       to: [CONTACT_EMAIL_TO],
       reply_to: inquiry.email,
       subject: `New Contact Inquiry from ${inquiry.name}`,
@@ -128,7 +128,7 @@ async function sendViaSmtp(inquiry: InquiryPayload): Promise<boolean> {
     });
 
     await transporter.sendMail({
-      from: `"Lamed Construction" <${CONTACT_EMAIL_FROM || SMTP_USER}>`,
+      from: `"Lamed Construction PLC" <${CONTACT_EMAIL_FROM || SMTP_USER}>`,
       to: CONTACT_EMAIL_TO,
       replyTo: inquiry.email,
       subject: `New Contact Inquiry from ${inquiry.name}`,

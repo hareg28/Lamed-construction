@@ -77,7 +77,7 @@ export function generateLocalAIResponse(userMessage: string, preferredLang?: str
       handler: () => {
         if (isAmharic) {
           return {
-            message: 'ጤና ይስጥልኝ! ወደ **ላሜድ ኮንስትራክሽን (Lamed Construction)** እንኳን በደህና መጡ። 🏗️\n\nእኔ የላሜድ የ AI አማካሪ ነኝ። ስለ ቤት ግንባታ፣ ዋጋ ስሌት፣ የፕሮጀክት ጊዜ፣ ወይም ስለ ፈቃድ እና ዲዛይን ማንኛውንም ጥያቄዎን መመለስ እችላለሁ። ዛሬ በምን ልርዳዎ?',
+            message: 'ጤና ይስጥልኝ! ወደ **ላሜድ ኮንስትራክሽን (Lamed Construction PLC)** እንኳን በደህና መጡ። 🏗️\n\nእኔ የላሜድ የ AI አማካሪ ነኝ። ስለ ቤት ግንባታ፣ ዋጋ ስሌት፣ የፕሮጀክት ጊዜ፣ ወይም ስለ ፈቃድ እና ዲዛይን ማንኛውንም ጥያቄዎን መመለስ እችላለሁ። ዛሬ በምን ልርዳዎ?',
             suggestions: ['የምንሰጣቸው አገልግሎቶች', 'የቪላ ዋጋ ምን ያህል ነው?', 'የቤት ግንባታ ጊዜ ስንት ነው?', 'ነፃ ምክር ቀጠሮ'],
           };
         }
@@ -112,7 +112,7 @@ export function generateLocalAIResponse(userMessage: string, preferredLang?: str
           };
         }
         return {
-          message: `**Lamed Construction Headquarters & Location**
+          message: `**Lamed Construction PLC Headquarters & Location**
 
 🏢 **Office Address:** Bole Sub-City, Addis Ababa, Ethiopia
 📞 **Direct Phone:** **+251 111 234 567** / **+251 911 123 456**
@@ -309,7 +309,7 @@ Submit your contact details below and our team will reach out within 1 business 
         return {
           message: `**Building Permits, Zoning & Municipal Approvals**
 
-Yes! Lamed Construction manages the complete regulatory permitting process on your behalf:
+Yes! Lamed Construction PLC manages the complete regulatory permitting process on your behalf:
 
 📋 **Approvals We Secure for You:**
 1. **Architectural, Structural, MEP Design Approval** from Sub-City Urban Planning
@@ -441,7 +441,7 @@ We never compromise on structural integrity. All materials undergo independent l
         return {
           message: `**Projects Outside Addis Ababa & Regional Developments**
 
-Yes! Lamed Construction undertakes select residential, commercial, resort, and industrial projects across major Ethiopian regional hubs:
+Yes! Lamed Construction PLC undertakes select residential, commercial, resort, and industrial projects across major Ethiopian regional hubs:
 
 📍 **Key Regions We Serve:**
 • **Bishoftu (Debre Zeit) & Adama:** Luxury lakefront villas, resorts, and logistics centers

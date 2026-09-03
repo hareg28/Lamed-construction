@@ -63,7 +63,7 @@ export default function AIChatWidget() {
           id: 'welcome-1',
           sender: 'bot',
           text: isAm
-            ? 'ጤና ይስጥልኝ! ወደ **ላሜድ ኮንስትራክሽን (Lamed Construction)** እንኳን በደህና መጡ። እኔ የላሜድ የኤ አይ (AI) አማካሪዎ ነኝ። ስለ መኖሪያ ቪላዎች፣ የንግድ ህንፃዎች ወይም ስለ ግንባታ ወጪዎች በምን ላግዝዎ እችላለሁ?'
+            ? 'ጤና ይስጥልኝ! ወደ **ላሜድ ኮንስትራክሽን (Lamed Construction PLC)** እንኳን በደህና መጡ። እኔ የላሜድ የኤ አይ (AI) አማካሪዎ ነኝ። ስለ መኖሪያ ቪላዎች፣ የንግድ ህንፃዎች ወይም ስለ ግንባታ ወጪዎች በምን ላግዝዎ እችላለሁ?'
             : 'Hello! Welcome to **Lamed Construction PLC**. I am your intelligent AI construction advisor. How can I help you with your residential, commercial, or mixed-use project today?',
           timestamp: new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }),
           suggestions: isAm
@@ -157,8 +157,8 @@ export default function AIChatWidget() {
         id: `welcome-${Date.now()}`,
         sender: 'bot',
         text: isAm
-          ? 'ውይይቱ ታድሷል። ስለ ላሜድ ኮንስትራክሽን ፕሮጀክቶች፣ አገልግሎቶች ወይም ዋጋዎች ምን ማወቅ ይፈልጋሉ?'
-          : 'Chat refreshed. What would you like to explore regarding Lamed Construction today?',
+          ? 'ውይይቱ ታድሷል። ስለ ላሜድ ኮንስትራክሽን (Lamed Construction PLC) ፕሮጀክቶች፣ አገልግሎቶች ወይም ዋጋዎች ምን ማወቅ ይፈልጋሉ?'
+          : 'Chat refreshed. What would you like to explore regarding Lamed Construction PLC today?',
         timestamp: new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }),
         suggestions: isAm
           ? ['የምንሰጣቸው አገልግሎቶች', 'የግንባታ ዋጋ ግምት', 'የተጠናቀቁ ፕሮጀክቶች']
@@ -517,4 +517,3 @@ export default function AIChatWidget() {
     </>
   );
 }
-

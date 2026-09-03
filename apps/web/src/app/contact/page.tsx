@@ -550,7 +550,7 @@ export default function ContactPage() {
         >
           <div className="relative aspect-[21/9] bg-navy-100">
             <iframe
-              title="Lamed Construction HQ - Addis Ababa Map"
+              title="Lamed Construction PLC HQ - Addis Ababa Map"
               src="https://www.openstreetmap.org/export/embed.html?bbox=38.81%2C9.005%2C38.86%2C9.035&layer=mapnik&marker=9.021306%2C38.839587"
               className="absolute inset-0 w-full h-full border-0"
               loading="lazy"
@@ -575,7 +575,7 @@ export default function ContactPage() {
                 </div>
                 <div className="mt-4 bg-navy-900/90 backdrop-blur-sm rounded-2xl px-6 py-3 text-center border border-navy-700">
                   <div className="text-white font-bold text-lg font-serif">
-                    Lamed Construction HQ
+                    Lamed Construction PLC HQ
                   </div>
                   <div className="text-emerald-300 text-sm">
                     Bole Sub-City, Addis Ababa, Ethiopia

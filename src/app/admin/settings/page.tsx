@@ -110,7 +110,7 @@ export default function AdminSettingsPage() {
   } = useForm<SiteForm>({
     resolver: zodResolver(siteSchema),
     defaultValues: {
-      siteTitle: 'Lamed Construction',
+      siteTitle: 'Lamed Construction PLC',
       siteDescription:
         'Premier construction company in Addis Ababa, Ethiopia specializing in residential, commercial, and mixed-use development projects.',
       contactEmail: 'info@lamedconstruction.com',

@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     default: "Lamed Admin Panel",
     template: "%s | Lamed Admin",
   },
-  description: "Admin panel for Lamed Construction",
+  description: "Admin panel for Lamed Construction PLC",
   robots: { index: false, follow: false },
 };
 

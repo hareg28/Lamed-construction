@@ -91,7 +91,7 @@ export default function Navbar() {
             >
               <Image
                 src={logoImage}
-                alt="Lamed Construction Logo"
+                alt="Lamed Construction PLC Logo"
                 fill
                 className="object-contain"
                 priority
@@ -157,7 +157,7 @@ export default function Navbar() {
                   <div className="relative bg-white rounded-xl" style={{ width: "140px", height: "48px" }}>
                     <Image
                       src={logoImage}
-                      alt="Lamed Construction Logo"
+                      alt="Lamed Construction PLC Logo"
                       fill
                       className="object-contain p-1.5"
                     />

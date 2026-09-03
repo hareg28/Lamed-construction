@@ -19,7 +19,7 @@ const INITIAL_CERTIFICATES: Certificate[] = [
   {
     id: 'cert-1',
     title: 'Project Completion Certificate',
-    description: 'Official Project Completion Certificate awarded by Ethiopian Orthodox Church leadership honoring Lamed Construction for outstanding structural craftsmanship and successful project completion.',
+    description: 'Official Project Completion Certificate awarded by Ethiopian Orthodox Church leadership honoring Lamed Construction PLC for outstanding structural craftsmanship and successful project completion.',
     image: '/assets/images/certeficate.jpg',
     issuer: 'Ethiopian Orthodox Tewahedo Church',
     year: '2024',
@@ -28,7 +28,7 @@ const INITIAL_CERTIFICATES: Certificate[] = [
   {
     id: 'cert-2',
     title: 'Project Completion Certificate',
-    description: 'Project Completion and Dedication Certificate presented to Lamed Construction upon the successful finalization, ceremonial blessing, and handover of sanctuary buildings.',
+    description: 'Project Completion and Dedication Certificate presented to Lamed Construction PLC upon the successful finalization, ceremonial blessing, and handover of sanctuary buildings.',
     image: '/assets/images/certeficate2.jpg',
     issuer: 'Archbishops & Synod Council',
     year: '2023',
@@ -138,7 +138,7 @@ export default function AboutPage() {
         <div className="absolute inset-0">
           <img
             src={HERO_BG}
-            alt="Lamed Construction"
+            alt="Lamed Construction PLC"
             className="w-full h-full object-cover opacity-50"
           />
           <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-black/55 to-black/85" />
@@ -153,7 +153,7 @@ export default function AboutPage() {
               Who We Are
             </span>
             <h1 className="font-serif text-3xl sm:text-4xl md:text-6xl lg:text-7xl text-white mb-4 sm:mb-6 leading-tight font-bold drop-shadow-md">
-              About <span className="text-emerald-400">Lamed Construction</span>
+              About <span className="text-emerald-400">Lamed Construction PLC</span>
             </h1>
             <p className="text-slate-200 text-base sm:text-lg md:text-xl max-w-2xl mx-auto leading-relaxed font-medium">
               A legacy of craftsmanship, integrity, and innovation — building Ethiopia&apos;s future, one structure at a time.
@@ -177,7 +177,7 @@ export default function AboutPage() {
               <div className="relative w-full rounded-3xl overflow-hidden shadow-2xl bg-gradient-to-br from-emerald-900/10 via-slate-50 to-navy-900/10 dark:from-navy-900 dark:via-navy-900/80 dark:to-navy-950 p-8 sm:p-12 border border-slate-200 dark:border-navy-800 flex items-center justify-center min-h-[320px] sm:min-h-[400px]">
                 <img
                   src={LOGO_IMAGE}
-                  alt="Lamed Construction logo"
+                  alt="Lamed Construction PLC logo"
                   className="w-full max-w-xs sm:max-w-sm md:max-w-md h-auto object-contain drop-shadow-xl hover:scale-105 transition-transform duration-500"
                 />
               </div>
@@ -208,7 +208,7 @@ export default function AboutPage() {
               />
               <div className="space-y-4 sm:space-y-5 text-slate-800 dark:text-slate-200 leading-relaxed text-sm sm:text-base font-medium">
                 <p>
-                  Lamed Construction is a trusted construction company based in Addis Ababa, Ethiopia. We specialize in delivering high-quality residential, commercial, and industrial projects with a commitment to excellence, innovation, and customer satisfaction.
+                  Lamed Construction PLC is a trusted construction company based in Addis Ababa, Ethiopia. We specialize in delivering high-quality residential, commercial, and industrial projects with a commitment to excellence, innovation, and customer satisfaction.
                 </p>
                 <p>
                   Founded on the principles of honesty and hard work, we have grown into one of the region&apos;s most reliable construction partners. From humble beginnings to landmark projects that define cityscapes, our journey reflects our unwavering dedication to craftsmanship, ethical practices, and the communities we serve.
@@ -282,7 +282,7 @@ export default function AboutPage() {
           <SectionHeading
             eyebrow="Differentiators"
             title="Why Choose Us"
-            subtitle="Four pillars that set Lamed Construction apart as your trusted building partner."
+            subtitle="Four pillars that set Lamed Construction PLC apart as your trusted building partner."
             center
           />
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 sm:gap-6">

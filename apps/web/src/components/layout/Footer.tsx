@@ -12,9 +12,9 @@ import {
   Clock,
 } from "lucide-react";
 import logoImage from "../../../assets/LAMED-Photoroom.png";
+import qrCodeImage from "../../../assets/images/lamed_qrcode.png";
 import { useLanguageStore } from "@/store/languageStore";
 import { useTranslation } from "@/lib/i18n";
-
 const BG = "#3ecf8e";
 const BG_DARK = "#2ab87a";
 const BORDER = "#2ab87a";
@@ -23,6 +23,7 @@ const contactNumbers = [
   { number: "+251 913 59 70 51", name: "Eliyas Seyoum" },
   { number: "+251 992 861848", name: "Yeshak seyoum" },
   { number: "+251 923 36 64 84", name: "Yosef Fikru" },
+
 ];
 
 const socialLinks = [
@@ -58,7 +59,7 @@ export default function Footer() {
               >
                 <Image
                   src={logoImage}
-                  alt="Lamed Construction Logo"
+                  alt="Lamed Construction PLC Logo"
                   fill
                   className="object-contain"
                 />
@@ -182,8 +183,8 @@ export default function Footer() {
             <div className="bg-white p-3 rounded-xl inline-block mb-4" style={{ border: "1px solid #34d399" }}>
               <div className="relative w-32 h-32">
                 <Image
-                  src="/assets/images/lamed_info_qr.png"
-                  alt="Lamed Construction QR Code"
+                  src={qrCodeImage}
+                  alt="Lamed Construction PLC QR Code"
                   fill
                   className="object-contain rounded-lg"
                 />
@@ -201,7 +202,7 @@ export default function Footer() {
       <div style={{ borderTop: `1px solid ${BORDER}`, backgroundColor: BG_DARK }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p style={{ fontSize: "0.875rem", color: "#6ee7b7" }}>
-            © {new Date().getFullYear()} Lamed Construction. All rights reserved.
+            © {new Date().getFullYear()} Lamed Construction PLC. All rights reserved.
           </p>
           <div className="flex items-center gap-6">
             <Link href="/privacy" style={{ fontSize: "0.875rem", color: "#6ee7b7" }} className="hover:!text-white transition-colors">

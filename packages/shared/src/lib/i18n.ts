@@ -141,7 +141,7 @@ const translations: Record<Language, Translations> = {
       renovation: 'Renovation',
     },
     about: {
-      title: 'About Lamed Construction',
+      title: 'About Lamed Construction PLC',
       mission: 'Our Mission',
       vision: 'Our Vision',
       certificates: 'Certificates & Awards',
@@ -315,7 +315,7 @@ const translations: Record<Language, Translations> = {
       renovation: 'Haaromsa',
     },
     about: {
-      title: 'Waa\'ee Lamed Construction',
+      title: 'Waa\'ee Lamed Construction PLC',
       mission: 'Ergama Keenya',
       vision: 'Mul\'ata Keenya',
       certificates: 'Waraqaalee fi Badhaasota',

@@ -80,7 +80,7 @@ export default function AdminLoginPage() {
                 </svg>
               </div>
               <h1 className="text-2xl font-bold text-navy-800 font-serif-display mb-1">
-                Lamed Construction
+                Lamed Construction PLC
               </h1>
               <p className="text-sm text-navy-500">Admin Dashboard</p>
             </div>

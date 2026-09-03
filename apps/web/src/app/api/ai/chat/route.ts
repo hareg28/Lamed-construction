@@ -78,7 +78,7 @@ export async function POST(request: Request) {
               },
               contents: [
                 ...(Array.isArray(history)
-                  ? history.slice(-6).map((h: { role: string; content: string }) => ({
+                  ? history.slice(-6).map((h: any) => ({
                       role: h.role === 'user' ? 'user' : 'model',
                       parts: [{ text: h.content }],
                     }))

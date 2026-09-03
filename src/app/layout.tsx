@@ -22,11 +22,11 @@ const playfair = Playfair_Display({
 
 export const metadata: Metadata = {
   title: {
-    default: "Lamed Construction | Building Excellence in Addis Ababa",
-    template: "%s | Lamed Construction",
+    default: "Lamed Construction PLC | Building Excellence in Addis Ababa",
+    template: "%s | Lamed Construction PLC",
   },
   description:
-    "Lamed Construction is a premier construction company in Addis Ababa, Ethiopia specializing in residential, commercial, and mixed-use development projects with unmatched craftsmanship.",
+    "Lamed Construction PLC is a premier construction company in Addis Ababa, Ethiopia specializing in residential, commercial, and mixed-use development projects with unmatched craftsmanship.",
   keywords: [
     "construction",
     "Addis Ababa",
@@ -37,12 +37,13 @@ export const metadata: Metadata = {
     "contractor",
     "Lamed",
     "Lamed Construction",
+    "Lamed Construction PLC",
     "real estate",
     "development",
   ],
-  authors: [{ name: "Lamed Construction" }],
-  creator: "Lamed Construction",
-  publisher: "Lamed Construction",
+  authors: [{ name: "Lamed Construction PLC" }],
+  creator: "Lamed Construction PLC",
+  publisher: "Lamed Construction PLC",
   formatDetection: {
     email: false,
     address: false,
@@ -52,22 +53,22 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     url: "https://lamedconstruction.com",
-    title: "Lamed Construction | Building Excellence in Addis Ababa",
+    title: "Lamed Construction PLC | Building Excellence in Addis Ababa",
     description:
       "Premier construction company in Addis Ababa, Ethiopia specializing in residential, commercial, and mixed-use development projects.",
-    siteName: "Lamed Construction",
+    siteName: "Lamed Construction PLC",
     images: [
       {
         url: "/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "Lamed Construction",
+        alt: "Lamed Construction PLC",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Lamed Construction | Building Excellence in Addis Ababa",
+    title: "Lamed Construction PLC | Building Excellence in Addis Ababa",
     description:
       "Premier construction company in Addis Ababa, Ethiopia specializing in residential, commercial, and mixed-use development projects.",
     images: ["/og-image.jpg"],

@@ -134,7 +134,7 @@ export default function NewsPage() {
               No News Articles Yet
             </h3>
             <p className="text-slate-800 font-medium max-w-md mx-auto">
-              Check back soon for the latest updates from Lamed Construction.
+              Check back soon for the latest updates from Lamed Construction PLC.
             </p>
           </motion.div>
         )}
