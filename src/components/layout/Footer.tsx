@@ -12,7 +12,7 @@ import {
   Clock,
 } from "lucide-react";
 import logoImage from "../../../assets/LAMED-Photoroom.png";
-const qrCodeImage = "/assets/images/lamed_qrcode.png";
+const qrCodeImage = "/assets/images/qrcode_lamedconstruction_et.png";
 import { useLanguageStore } from "@/store/languageStore";
 import { useTranslation } from "@/lib/i18n";
 const BG = "#3ecf8e";
