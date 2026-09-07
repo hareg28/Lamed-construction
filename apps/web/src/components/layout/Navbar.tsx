@@ -59,10 +59,9 @@ export default function Navbar() {
       )}
       style={{ backgroundColor: "#3ecf8e" }}
     >
-      <nav className="w-full relative flex items-center h-16 sm:h-20 lg:h-[5.5rem] px-4 sm:px-6 lg:px-10 xl:px-16 gap-3">
-
-        {/* NAV LINKS — left side */}
-        <div className="hidden md:flex items-center gap-1 lg:gap-2" style={{ flex: "0 0 auto" }}>
+      <nav className="w-full relative flex items-center h-16 sm:h-20 lg:h-[5.5rem] px-3 sm:px-6 lg:px-10 xl:px-16 gap-2 sm:gap-3">
+        {/* NAV LINKS — left side (desktop) */}
+        <div className="hidden md:flex items-center gap-1 lg:gap-2 shrink-0">
           {navLinks.slice(0, 4).map((link) => (
             <Link
               key={link.href}
@@ -79,29 +78,26 @@ export default function Navbar() {
           ))}
         </div>
 
-        {/* SPACER */}
+        {/* SPACER (desktop) */}
         <div className="hidden md:block flex-1" />
 
-        {/* LOGO — absolutely centered, large, no background */}
-        <div className="absolute left-1/2 -translate-x-1/2 h-full flex items-center pointer-events-none">
-          <Link href="/" className="flex items-center pointer-events-auto">
-            <div
-              className="relative hover:scale-105 transition-transform duration-200"
-              style={{ width: "340px", height: "100px" }}
-            >
+        {/* LOGO — responsive positioning & sizing */}
+        <div className="relative md:absolute md:left-1/2 md:-translate-x-1/2 h-full flex items-center shrink-0 z-10">
+          <Link href="/" className="flex items-center">
+            <div className="relative hover:scale-105 transition-transform duration-200 w-[130px] sm:w-[170px] md:w-[300px] lg:w-[340px] h-[40px] sm:h-[50px] md:h-[90px]">
               <Image
                 src={logoImage}
                 alt="Lamed Construction PLC Logo"
                 fill
-                className="object-contain"
+                className="object-contain object-left md:object-center"
                 priority
               />
             </div>
           </Link>
         </div>
 
-        {/* NAV LINKS — right side */}
-        <div className="hidden md:flex items-center gap-1 lg:gap-2" style={{ flex: "0 0 auto" }}>
+        {/* NAV LINKS — right side (desktop) */}
+        <div className="hidden md:flex items-center gap-1 lg:gap-2 shrink-0">
           {navLinks.slice(4).map((link) => (
             <Link
               key={link.href}
@@ -119,12 +115,16 @@ export default function Navbar() {
         </div>
 
         {/* RIGHT SIDE controls */}
-        <div className="flex items-center gap-2 sm:gap-3 lg:gap-4 shrink-0 ml-auto" style={{ color: '#064e3b' }}>
+        <div className="flex items-center gap-1.5 sm:gap-3 lg:gap-4 shrink-0 ml-auto z-20 relative" style={{ color: '#064e3b' }}>
           <LanguageSwitcher />
           <ThemeToggle />
           <button
-            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            className="md:hidden p-2.5 rounded-xl bg-emerald-700 text-white hover:bg-emerald-600 transition-colors"
+            type="button"
+            onClick={(e) => {
+              e.stopPropagation();
+              setIsMobileMenuOpen((prev) => !prev);
+            }}
+            className="md:hidden p-2 sm:p-2.5 rounded-xl bg-emerald-700 text-white hover:bg-emerald-600 active:bg-emerald-800 transition-colors z-30 cursor-pointer flex items-center justify-center shrink-0"
             aria-label={isMobileMenuOpen ? "Close menu" : "Open menu"}
           >
             {isMobileMenuOpen ? <X size={22} /> : <Menu size={22} />}
@@ -141,7 +141,7 @@ export default function Navbar() {
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
               transition={{ duration: 0.2 }}
-              className="fixed inset-0 bg-black/60 z-40 lg:hidden"
+              className="fixed inset-0 bg-black/60 z-40 md:hidden"
               onClick={() => setIsMobileMenuOpen(false)}
             />
             <motion.div
@@ -149,11 +149,15 @@ export default function Navbar() {
               animate={{ x: 0 }}
               exit={{ x: "100%" }}
               transition={{ type: "spring", damping: 25, stiffness: 200 }}
-              className="fixed top-0 right-0 h-full w-80 max-w-[85vw] shadow-2xl z-50 lg:hidden flex flex-col"
+              className="fixed top-0 right-0 h-full w-80 max-w-[85vw] shadow-2xl z-50 md:hidden flex flex-col"
               style={{ backgroundColor: "#064e3b" }}
             >
               <div className="flex items-center justify-between p-6 border-b border-emerald-700">
-                <Link href="/" className="flex items-center gap-3">
+                <Link
+                  href="/"
+                  className="flex items-center gap-3"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
                   <div className="relative bg-white rounded-xl" style={{ width: "140px", height: "48px" }}>
                     <Image
                       src={logoImage}
@@ -164,6 +168,7 @@ export default function Navbar() {
                   </div>
                 </Link>
                 <button
+                  type="button"
                   onClick={() => setIsMobileMenuOpen(false)}
                   className="p-2.5 rounded-lg text-emerald-100 hover:bg-emerald-700 transition-colors"
                   aria-label="Close menu"
@@ -182,6 +187,7 @@ export default function Navbar() {
                   >
                     <Link
                       href={link.href}
+                      onClick={() => setIsMobileMenuOpen(false)}
                       className={cn(
                         "block px-4 py-3.5 rounded-xl text-lg font-bold transition-all duration-200",
                         isActive(link.href)
@@ -202,6 +208,7 @@ export default function Navbar() {
                 >
                   <Link
                     href="/admin/login"
+                    onClick={() => setIsMobileMenuOpen(false)}
                     className="block px-4 py-2.5 rounded-xl text-xs font-semibold text-emerald-400 hover:text-white transition-colors text-center"
                   >
                     Admin Access
